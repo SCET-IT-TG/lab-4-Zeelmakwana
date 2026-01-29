@@ -39,7 +39,7 @@ db.movies.find(
 **********************************/
 db.movies.find().sort({ year: -1 }).explain("executionStats");
 
-db.movies.createIndex({ year: -1 });
+db.movies.createIndex({ year: 1 });
 
 db.movies.find().sort({ year: -1 }).explain("executionStats");
 
